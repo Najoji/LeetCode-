@@ -1,8 +1,8 @@
 class Solution(object):
     def thirdMax(self, nums):
-        first = -30000000000 
-        second = -3000000000 
-        third = -30000000000
+        first = None
+        second =  None
+        third = None
         for i in nums:
             if i > first :
                 first = i 
@@ -13,7 +13,7 @@ class Solution(object):
             if i > third and i < second and i < first :
                 third = i 
         
-        if third > -30000000000:
+        if third is not None:
             return third 
         else:
             return first 
