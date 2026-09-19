@@ -17,9 +17,7 @@ class Solution(object):
         
         for key,value in dict2.items():
             if dict2[key] != dict1.get(key,0):  
-                x = dict2[key] - dict1.get(key,0)
-                y = key * x 
-        return y 
+                return key 
 
                 
                 
